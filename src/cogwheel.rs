@@ -27,8 +27,8 @@ pub(crate) fn cogwheel(painter: &Painter, center: Pos2, radius: f32, color: Colo
         let rotation = Rot2::from_angle(TAU / cogs as f32 * n as f32);
         let rect = Rect::from_center_size(cog_center, cog_size);
         let rounding = Rounding {
-            nw: cog_rounding,
-            ne: cog_rounding,
+            nw: cog_rounding as u8,
+            ne: cog_rounding as u8,
             ..Default::default()
         };
         draw_rotated_rect(painter, rect, rounding, color, rotation, center);

@@ -1,6 +1,6 @@
 [package]
 name = "egui-theme-switch"
-version = "0.2.3"
+version = "0.2.4"
 edition = "2021"
 rust-version = "1.80.0"
 license = "MIT OR Apache-2.0"
@@ -18,5 +18,5 @@ egui.workspace = true
 members = ["demo"]
 
 [workspace.dependencies]
-egui = { version = "0.30.0", default-features = false }
-eframe = { version = "0.30.0", features = ["persistence"] }
+egui = { version = "0.31.0", default-features = false }
+eframe = { version = "0.31.0", features = ["persistence"] }
